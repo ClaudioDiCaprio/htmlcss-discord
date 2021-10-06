@@ -34,6 +34,11 @@ nav {
     float: left;
 }
 
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
 #jumbotron {
     height: 500px;
 }
@@ -53,12 +58,12 @@ nav {
 
 .debug .row div,
 .debug .row nav {
-    height: 90px;
+    height: 80px;
     background-color: thistle;
 }
 
 .debug .row nav {
-    height: 90px;
+    height: 80px;
     background-color: brown;
 }
 /* .debug header {
