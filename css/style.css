@@ -20,11 +20,30 @@ body {
     clear: both;
     content: "";
 }
+ /* btn */
+ 
+ .btn:hover {
+     text-decoration: none;
+ }
+
+ .btn {
+     border-radius: 20px;
+     text-decoration: none;
+     padding: 10px 15px ;
+     font-size: 14px;
+     background-color: white;
+     color:black;
+     
+     /* font-weight: bold;
+      */
+} 
+
 /* header */
 header {
     height:80px;
     background-color:#255ee9 ;
     line-height: 80px;    
+    font-weight: 600;
 }
 
 #logo,
@@ -53,8 +72,6 @@ nav li {
 nav li a {
     color: white;
     font-size: 17px;
-    font-weight: 500;
-    font-weight: bold;
     text-decoration: none;
     margin: 0 15px;
 }
@@ -62,6 +79,8 @@ nav li a {
 nav li a:hover {
     text-decoration: underline;
 }
+
+
 
 #jumbotron {
     height: 500px;
