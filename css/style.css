@@ -236,7 +236,7 @@ nav li a:hover {
 
 /* footer */
 footer {
-    height: 600px;
+    height: 500px;
     background-color: #23272a;
     padding: 100px;
 }
@@ -255,13 +255,14 @@ footer {
 .languages {
     color: white;
     margin-top: 20px;
+    font-size: small;
 }
 .ita{
     width: 10%;
 }
-.arrow {
+/* .arrow {
     font-size: small;
-}
+} */
 
 .social {
     color: white;
@@ -272,6 +273,30 @@ footer {
     margin:5px
 }
 
+.container .prodotto ul,
+.container .compagnia ul,
+.container .risorse ul,
+.container .norme ul {
+    list-style: none;
+}
+
+.container .prodotto ul li,
+.container .compagnia ul li,
+.container .risorse ul li,
+.container .norme ul li {
+    font-size:15px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+ 
+
+.container .prodotto ul li:first-child,
+.container .compagnia ul li:first-child,
+.container .risorse ul li:first-child,
+.container .norme ul li:first-child {
+    color: rgb(151, 176, 253);
+}
 
 
 
@@ -312,13 +337,14 @@ footer {
 
 
 .container .color {
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 400px;
     position: relative;
 }
 
 .container .color .ur_place {
-    background-color: tomato;
+    /* 
+     */
     height:200px;
     width:200px;
     position: absolute;
@@ -327,24 +353,42 @@ footer {
 } 
 
 .container .color .prodotto {
-    background-color: tomato;
+    /* background-color: tomato; */
     height: 200px;
-    width: 300px;
+    width: 120px;
     position: absolute;
     top: 0;
-    left: 300px;
+    left: 280px;
+}
+
+.container .color .compagnia {
+    /* background-color: tomato; */
+    height: 200px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 450px;
 }
 
 
+.container .color .risorse {
+    /* background-color: tomato; */
+    height: 200px;
+    width: 120px;
+    position: absolute;
+    top: 0;
+    right: 190px;
+}
 
 .container .color .norme {
-    background-color: tomato;
+    /* background-color: tomato; */
     height: 200px;
-    width: 300px;
+    width: 120px;
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 20px;
 }
+
 
 .underline {
     width: 100%;
@@ -352,21 +396,22 @@ footer {
     line-height: 50px;
     border-top: 1px solid rgb(151, 176, 253);;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 .container .color .under {
-    background-color: tomato;
+    /* background-color: tomato; */
     height: 50px;
     width: 150px;
     position: absolute;
     bottom: 0;
     right: 0;
     
+    
 }
 .container .color .r_under {
-    background-color: tomato;
+    /* background-color: tomato; */
     height: 50px;
-    width: 150px;
+    
     position: absolute;
     bottom: 0;
     
@@ -374,4 +419,10 @@ footer {
 
 .r_under img {
     vertical-align: middle;
+    width: 100px;
+}
+
+.under .azul{
+    margin-left: 60px;
+    font-size: 12px;
 }
