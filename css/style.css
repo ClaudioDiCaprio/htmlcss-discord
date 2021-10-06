@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
 .container {
@@ -14,6 +14,23 @@ body {
     margin: 0 auto;
     max-width: 1170px;
 }
+
+.medial {
+    height: 500px;
+    position: relative;
+}
+.medial_{
+    height: 500px;
+    position: relative;
+}
+
+.bunny {
+    height: 900px;
+    position: relative;
+    text-align: center;
+}
+
+
 
 .row::after {
     display: table;
@@ -27,16 +44,32 @@ body {
  }
 
  .btn {
-     border-radius: 20px;
+     border-radius: 2em;
      text-decoration: none;
      padding: 10px 15px ;
      font-size: 14px;
-     background-color: white;
      color:black;
-     
-     /* font-weight: bold;
-      */
-} 
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.azul {
+    background-color: rgb(151, 176, 253);
+    color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.big {
+    font-size: 20px;
+    padding: 15px 20px ;
+}
 
 /* header */
 header {
@@ -80,24 +113,180 @@ nav li a:hover {
     text-decoration: underline;
 }
 
-
+/* main */
 
 #jumbotron {
     height: 500px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color: white;
 }
 
-/* main */
+#jumbotron .jumbo_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 700px;
+}
 
+#jumbotron h1 {
+    font-size: 60px;
+}
+
+#jumbotron p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 30px 0;
+}
+
+#jumbotron .btn {
+    margin: 0 10px;
+}
+
+#jumbotron i {
+    margin: 0 10px;
+}
+
+.frog {
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.medial .a_place {
+
+} 
+
+.a_place {
+    width:23%;
+    position: absolute;
+    right: 180px;
+    top: 125px;
+}
+
+.medial .a_place h2,
+.medial_ .where h2,
+.bunny .tecno h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.medial .a_place p,
+.medial_ .where p {
+    font-size: 15px;
+}
+
+ 
+
+.where {
+    width: 23%;
+    position: absolute;
+    top: 200px;
+    left: 150px ;
+}
+
+.wiz {
+    width: 150%;
+    position: absolute;
+    top: -50px;
+    left: 500px;
+}
+
+.tecno {
+    margin:200px ;
+}
+
+
+
+.ulysses {
+    width: 120%;
+    position: relative;
+    right: 80px;
+}
+
+.stars {
+    padding: 15px;
+    position:relative;
+    left: 110px;
+    top: 50px;
+    height: 50px;
+    width: 530px;
+    background-image: url(../img/stars.svg);
+    background-position-y: 50px;
+    background-size: cover;
+}
+
+.bunny .stars h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin top: 5px;
+
+}
+
+.bototom {
+    position: absolute;
+    bottom: 70px;
+    right: 490px;
+}
 
 /* footer */
+footer {
+    height: 600px;
+    background-color: #23272a;
+    padding: 100px;
+}
+
+/* footer {
+    height: 500px;
+    background-color: #23272a);
+} */
+
+.container .ur_place h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(151, 176, 253);
+
+}
+.languages {
+    color: white;
+    margin-top: 20px;
+}
+.ita{
+    width: 10%;
+}
+.arrow {
+    font-size: small;
+}
+
+.social {
+    color: white;
+    margin-top: 15px;
+
+}
+.color .ur_place .social i {
+    margin:5px
+}
+
+
+
+
+
+
+
+
 
 
 /* debug */
-.debug .container {
+/* .debug .container {
     height: 100%;
     /* background-color: teal; */
-    border: 2px solid black;
-}
+    /* border: 2px solid black;
+} */ 
 
 /* .debug .row div,
 .debug .row nav {
@@ -112,17 +301,77 @@ nav li a:hover {
 /* .debug header {
     background-color:#922f2f;
 } */
-
+/* 
 .debug #jumbotron {
-    background-color: chartreuse;
-}
+    background-color: chartreuse; */
 
-.debug main {
-    height: 2300px;
-    background-color: crimson;
-}
 
-.debug footer {
-    height: 500px;
+/* .debug main {
+    height: 2500px;
+    background-color: rgb(255, 255, 255); */
+
+
+.container .color {
     background-color: yellow;
+    height: 400px;
+    position: relative;
+}
+
+.container .color .ur_place {
+    background-color: tomato;
+    height:200px;
+    width:200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+.container .color .prodotto {
+    background-color: tomato;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+
+
+.container .color .norme {
+    background-color: tomato;
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.underline {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    border-top: 1px solid rgb(151, 176, 253);;
+    position: absolute;
+    bottom: 0;
+}
+.container .color .under {
+    background-color: tomato;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+.container .color .r_under {
+    background-color: tomato;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.r_under img {
+    vertical-align: middle;
 }
