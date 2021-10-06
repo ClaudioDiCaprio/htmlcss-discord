@@ -5,10 +5,33 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
 /* header */
 header {
     height:80px;
+    background-color:#255ee9 ;
     
+}
+
+#logo,
+#log_in {
+    width: 25%;
+    float: left;
+}
+
+nav {
+    width: 50%;
+    float: left;
 }
 
 #jumbotron {
@@ -22,9 +45,25 @@ header {
 
 
 /* debug */
-.debug header {
-    background-color: blueviolet;
+.debug .container {
+    height: 100%;
+    /* background-color: teal; */
+    border: 2px solid black;
 }
+
+.debug .row div,
+.debug .row nav {
+    height: 90px;
+    background-color: thistle;
+}
+
+.debug .row nav {
+    height: 90px;
+    background-color: brown;
+}
+/* .debug header {
+    background-color:#922f2f;
+} */
 
 .debug #jumbotron {
     background-color: chartreuse;
